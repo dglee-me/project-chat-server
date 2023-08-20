@@ -4,3 +4,24 @@ spring:
       enabled: true
     livereload:
       enabled: true
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+      format_sql: true
+      show_sql: true
+jwt:
+  header: Authorization
+  secret: 7JWE7KeE7Kec7KeR7JeQ6rCA6rOg7Iu264uk7J2066+47KeR7J207KeA66eM6re4656Y64+E6rCA6rOg7Iu264uk7ZWY7ZWz
+  token-validity-in-seconds: 86400
